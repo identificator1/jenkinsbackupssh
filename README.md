@@ -3,7 +3,7 @@
 M - Master (source) Jenkins Server
 D - destination server for backup
 
-1. Create a key (or use existing) on M: ssh-keygen (default: ~/.ssh/id_rsa)
+1. Generate keypair (or use existing) on M: ssh-keygen (default public: ~/.ssh/id_rsa)
 2. copy the public key to D: ssh-copy-id user_on_D@ip_or_DNS_of_D
 3. check an access: ssh user_on_D@ip_or_DNS_of_D
 4. create a folder on D server: /backup with proper permissions
